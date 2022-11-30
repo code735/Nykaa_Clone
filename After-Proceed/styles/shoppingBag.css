@@ -1,0 +1,164 @@
+body {
+    overflow: hidden;
+}
+
+#left-user-accounts-bar #account-first-div-ID {
+    display: flex;
+    font-family: Inter, sans-serif;
+    justify-content: space-around;
+}
+
+
+#left-user-accounts-bar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 162px;
+    padding-right: 162px;
+    position: relative;
+    margin-top: 65px;
+    height: calc(100vh - 65px);
+    margin-top: ;
+}
+
+
+
+/* 
+#account-first-div-ID>div {
+    display: flex;
+    flex-direction: column;
+} */
+#account-first-div-ID>div p:first-child {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    color: rgba(0, 19, 37, 0.92);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#account-first-div-ID>div p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 19, 37, 0.64);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#account-first-div-ID>div+div {
+    margin-bottom: 4%;
+    margin-top: -65px;
+    position: relative;
+    margin-right: -15%;
+    margin-left: 50px;
+}
+
+
+#login-signup-guest-div-ID {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    /* border: solid #ffaad3; */
+    justify-content: center;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+}
+
+#login-signup-guest-div-ID>div {
+    /* border: solid #000000; */
+}
+
+#login-signup-guest-div-ID>div>span {
+    text-align: justify;
+    font-size: 16px;
+    /* font-size: 16px; */
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(0, 19, 37);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter, sans-serif;
+}
+
+.user-login-button-CLASS {
+    padding: 12px;
+    border-style: solid;
+    font-size: 16px;
+    font-weight: 600;
+    border-width: thin;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    border-color: rgba(111, 121, 129, 0.36);
+    background-color: rgb(255, 255, 255);
+    color: rgb(232, 0, 113);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 81%;
+    margin-left: 9%;
+}
+
+
+.user-cart-details-CLASS {
+    width: 149%;
+
+}
+
+.user-cart-details-CLASS>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.user-cart-details-CLASS>div>div+div {
+    padding: 12%;
+}
+
+.bag-quantity-CLASS {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgb(0, 19, 37);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.bag-price-details-CLASS {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgb(0, 19, 37);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bag-price-details-CLASS>div {
+    display: flex;
+}
+
+.items-count-CLASS {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(0, 19, 37, 0.92);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.nykaa-trust-payment-CLASS {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+
+
+/* other some used css styles */

@@ -1,0 +1,61 @@
+#header-Shoppingbag-ID {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6%;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+
+#logo-Shoppingbag-ID {
+    display: flex;
+}
+
+#logo-Shoppingbag-ID img {
+    margin: 8px;
+    margin-left: 55px;
+}
+
+
+#progress-steps-ID {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 55%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: rgba(0, 19, 37, 0.92);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter, sans-serif;
+}
+
+.hr {
+    border-color: rgba(0, 19, 37, 0.16);
+    align-self: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-width: 0.1px;
+    width: 110%;
+}
+
+
+#progress-steps-ID>hr {
+    border-color: rgba(0, 19, 37, 0.16);
+    align-self: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    border-width: 0.5px;
+}
+
+.steps-CLASS {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
