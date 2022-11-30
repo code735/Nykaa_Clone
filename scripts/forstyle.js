@@ -9,17 +9,6 @@ for (let i = 0; i < dropdown.length; i++) {
   });
 }
 
-for (let i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("mouseenter", function () {
-    document.getElementById("content").style.display = "block";
-    flag = true;
-  });
-  dropdown[i].addEventListener("mouseleave", function () {
-    document.getElementById("content").style.display = "none";
-    flag = false;
-  });
-}
-
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
