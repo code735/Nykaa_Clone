@@ -7,7 +7,7 @@ var data = [
     prodname: "Makeup Revolution Hot Shot Kombucha Kiss Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/2/f200c585057566572804_1.jpg",
-    str_price: "",
+    str_price: "₹812",
     price: "₹750",
   },
   {
@@ -55,7 +55,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Makeup Revolution Hydrate Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/1/c12ab845057566479165_-_1.jpg",
     str_price: "₹850",
     price: "₹723",
   },
@@ -64,7 +65,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Revolution Relove Blur Fix Stick",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/004bb845057566479196_-_1.jpg",
     str_price: "₹699",
     price: "₹629",
   },
@@ -73,7 +75,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Makeup Revolution Mattify Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/8/08636f55057566076609_1.jpg",
     str_price: "₹850",
     price: "₹723",
   },
@@ -82,7 +85,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Revolution Relove H2o Hydrate Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/004bb845057566479196_-_1.jpg",
     str_price: "₹599",
     price: "₹569",
   },
@@ -91,7 +95,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Makeup Revolution Prime Bright Brightening Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/6/16be621makeu00000104_new_1.jpg",
     str_price: "₹1150",
     price: "₹1035",
   },
@@ -100,7 +105,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Revolution Relove Pore Vanish Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/004bb845057566479196_-_1.jpg",
     str_price: "₹599",
     price: "₹569",
   },
@@ -109,7 +115,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Revolution Relove Super Matte Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/e/8e80b845057566479189_-_1.jpg",
     str_price: "₹599",
     price: "₹569",
   },
@@ -118,7 +125,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Makeup Revolution Rehab Retinol Rescue Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/9/69f0c585057566442855_1.jpg",
     str_price: "₹950",
     price: "₹903",
   },
@@ -127,7 +135,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Revolution Relove Power Fix Primer",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/7/4761b845057566479172_-_1.jpg",
     str_price: "₹599",
     price: "₹569",
   },
@@ -136,7 +145,8 @@ var data = [
     category: "face",
     sub_category: "face primer",
     prodname: "Revolution Relove H2o Hydrate Fix Stick",
-    img_url: "",
+    img_url:
+      "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/d/1d15b845057566359870_-_1.jpg",
     str_price: "₹699",
     price: "₹629",
   },
@@ -584,3 +594,34 @@ document
       renderhere.append(img);
     });
   });
+
+var bestseller_item = document.querySelectorAll(".bestseller_item");
+var idx = 0;
+brandData.map(function (elem) {
+  var img = document.createElement("img");
+  img.setAttribute("src", elem.img_url);
+  bestseller_item[idx].append(img);
+
+  var name = document.createElement("p");
+  name.append(elem.prodname);
+  bestseller_item[idx].append(name);
+
+  var priceparent = document.createElement("div");
+  priceparent.setAttribute("class", "bestseller_item_priceparent");
+
+  var normalprice = document.createElement("p");
+  normalprice.textContent = elem.price;
+
+  var str_price = document.createElement("p");
+  str_price.textContent = elem.str_price;
+  str_price.style.textDecoration = "line-through";
+
+  priceparent.append(normalprice, str_price);
+
+  bestseller_item[idx].append(priceparent);
+
+  bestseller_item[idx].addEventListener("click", function () {
+    alert(elem.prodname);
+  });
+  idx++;
+});

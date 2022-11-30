@@ -26,5 +26,41 @@ $(".handpicked_carousel").owlCarousel({
   margin: 10,
   nav: true,
   dots: true,
-  items: 6.5,
+  responsive: {
+    0: {
+      items: 7,
+      nav: true,
+    },
+    600: {
+      items: 7,
+      nav: false,
+    },
+    1000: {
+      items: 7,
+      nav: true,
+      loop: false,
+    },
+  },
+});
+
+$(".bestsellers_section_items").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: true,
+  responsive: {
+    0: {
+      items: 7,
+      nav: true,
+    },
+    600: {
+      items: 7,
+      nav: false,
+    },
+    1000: {
+      items: 7,
+      nav: true,
+      loop: false,
+    },
+  },
 });
