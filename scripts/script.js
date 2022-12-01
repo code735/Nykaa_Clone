@@ -635,5 +635,3 @@ brandData.map(function (elem) {
   bestseller_item[idx].append(priceparent);
   idx++;
 });
-
-var carts = JSON.parse(localStorage.getItem("carts")) || [];

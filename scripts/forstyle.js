@@ -64,3 +64,15 @@ $(".bestsellers_section_items").owlCarousel({
     },
   },
 });
+
+document.getElementById("cart_icon").addEventListener("click", function () {
+  document.getElementById("bag_section").style.display = "block";
+  document.querySelector("body").style.overflow = "hidden";
+});
+
+document
+  .getElementById("bag_section_overlay")
+  .addEventListener("click", function () {
+    document.getElementById("bag_section").style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
+  });
