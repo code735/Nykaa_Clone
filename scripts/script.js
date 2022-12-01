@@ -616,12 +616,24 @@ brandData.map(function (elem) {
   str_price.textContent = elem.str_price;
   str_price.style.textDecoration = "line-through";
 
-  priceparent.append(normalprice, str_price);
-
-  bestseller_item[idx].append(priceparent);
-
   bestseller_item[idx].addEventListener("click", function () {
-    alert(elem.prodname);
+    var obj = {
+      brand: elem.brand,
+      category: elem.category,
+      sub_category: elem.sub_category,
+      prodname: elem.prodname,
+      img_url: elem.img_url,
+      str_price: elem.str_price,
+      price: elem.price,
+    };
+
+    localStorage.setItem("prod_display", JSON.stringify(obj));
+    window.open("pages/product.html");
   });
+
+  priceparent.append(normalprice, str_price);
+  bestseller_item[idx].append(priceparent);
   idx++;
 });
+
+var carts = JSON.parse(localStorage.getItem("carts")) || [];
