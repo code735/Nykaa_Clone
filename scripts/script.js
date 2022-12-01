@@ -294,6 +294,19 @@ var data = [
   },
 ];
 
+// Show Carts Data
+var cart = JSON.parse(localStorage.getItem("carts")) || [];
+document.getElementById("cart_counter").textContent = cart.length;
+product_display();
+function product_display() {
+  cart.map(function (elem) {
+    var h6 = document.createElement("h6");
+    h6.textContent = elem.prodname;
+
+    document.getElementById("products_cart_list").append(h6);
+  });
+}
+
 // remove duplicates
 
 var clean = data.filter(
