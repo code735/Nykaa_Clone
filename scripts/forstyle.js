@@ -65,6 +65,10 @@ $(".bestsellers_section_items").owlCarousel({
   },
 });
 
+// For bag slider
+
+document.getElementById("bi_arrow_left").style.cursor = "pointer";
+
 document.getElementById("cart_icon").addEventListener("click", function () {
   document.getElementById("bag_section").style.display = "block";
   document.querySelector("body").style.overflow = "hidden";
@@ -76,3 +80,8 @@ document
     document.getElementById("bag_section").style.display = "none";
     document.querySelector("body").style.overflow = "auto";
   });
+
+document.getElementById("bi_arrow_left").addEventListener("click", function () {
+  document.getElementById("bag_section").style.display = "none";
+  document.querySelector("body").style.overflow = "auto";
+});

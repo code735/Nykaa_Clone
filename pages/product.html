@@ -566,11 +566,27 @@
                 </div>
               </div>
             </div>
-            <a href="" class="ml-5 position-relative"><i class="bi bi-bag"></i><span id="cart_counter">0</span></a>
+            <a href="#" class="ml-5 position-relative" id="cart_icon"><i class="bi bi-bag"></i><span id="cart_counter">0</span></a>
           </form>
         </div>
       </nav>
     </header>
+
+    <!-- BAG SECTION -->
+    <section id="bag_section">
+      <div class="bag_section_wrapper d-flex">
+        <div id="bag_section_overlay" class=""></div>
+        <div id="bag_items_display" class="">
+          <div class="bag_section_overlay_head py-1 position-fixed w-100">
+            <i class="bi bi-arrow-left" id="bi_arrow_left"></i>
+            <h5>Bag</h5>
+          </div>
+          <div id="products_cart_list" class="mt-5 p-3">
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="py-5"></div>
     <nav class="btm-nav pt-4 pb-1">
@@ -619,7 +635,7 @@
         </select>
         <div id="product-purchase" class="d-flex align-items-center">
           <div class="add_to_bag pr-3">
-            <button>Add to Bag</button>
+            <button id="add_to_cart">Add to Bag</button>
           </div>
           <div class="address_details pl-3">
             <div class="location"><i class="bi bi-geo-alt"></i> Delivery Options</div>
@@ -645,9 +661,11 @@
       </div>
       
     </section>
+    
 
 
   </body>
 </html>
 <script src="/scripts/product.js"></script>
 <script src="/scripts/script.js"></script>
+
