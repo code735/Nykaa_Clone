@@ -1,7 +1,6 @@
 var cart = JSON.parse(localStorage.getItem("carts")) || [];
 
 display();
-product_display();
 
 function display() {
   document.getElementById("cart_counter").textContent = cart.length;
@@ -48,14 +47,3 @@ document.getElementById("add_to_cart").addEventListener("click", function () {
 
   product_display();
 });
-
-var cart = JSON.parse(localStorage.getItem("carts")) || [];
-
-function product_display() {
-  cart.map(function (elem) {
-    var h6 = document.createElement("h6");
-    h6.textContent = elem.prodname;
-
-    document.getElementById("products_cart_list").append(h6);
-  });
-}
