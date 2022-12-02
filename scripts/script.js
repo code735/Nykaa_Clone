@@ -307,14 +307,31 @@ function product_display() {
         "Qty: " + countQty(elem.prodname);
     } else {
       prodcheck.push(elem.prodname);
+      var div = document.createElement("div");
+
+      var img = document.createElement("img");
+      img.setAttribute("src", elem.img_url);
+
       var h6 = document.createElement("h6");
       h6.textContent = elem.prodname;
+
+      var i = document.createElement("i");
+      i.setAttribute("class", "bi");
+      i.setAttribute("class", "bi-trash3");
+
+      div.setAttribute("class", "bag_product");
+      div.append(img, h6, i);
+
       var p = document.createElement("p");
       p.textContent = "Qty: " + countQty(elem.prodname);
 
       p.setAttribute("id", elem.prodname);
 
-      document.getElementById("products_cart_list").append(h6, p);
+      var wrap = document.createElement("div");
+      wrap.setAttribute("class", "bag_product_wrap");
+      wrap.append(div, p);
+
+      document.getElementById("products_cart_list").append(wrap);
     }
   });
 }

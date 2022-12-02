@@ -616,6 +616,40 @@ header {
   margin-left: 20px;
 }
 
+.bag_product {
+  display: flex;
+  align-items: center;
+}
+
+.bag_product i {
+  font-size: 30px;
+}
+
+.bag_product i,
+.bag_product img {
+  width: 20%;
+}
+
+.bag_product h6 {
+  width: 60%;
+}
+
+.bag_product_wrap {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.bag_product_wrap img {
+  border-radius: 10px;
+}
+
+.bag_product_wrap p {
+  border-top: 1px solid black;
+}
+
 /* POP UP STORES SECTION */
 .pop_up_store_wrapper .d-flex {
   width: 80%;
