@@ -1,0 +1,41 @@
+.bi-bag {
+    font-size: 27px;
+}
+
+#bag_section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 16;
+}
+
+#bag_section_overlay {
+    height: 100vh;
+    width: 70%;
+    background: black;
+    opacity: 0.5;
+}
+
+#bag_items_display {
+    width: 30%;
+    height: 100vh;
+    background: white;
+}
+
+.bag_section_overlay_head {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a3a2a2;
+    padding: 0 20px;
+}
+
+.bi-arrow-left {
+    font-weight: bold;
+    font-size: 33px;
+}
+
+#bag_section h5 {
+    font-weight: bold;
+    margin-left: 20px;
+}
