@@ -19,3 +19,5 @@ Please follow following steps to go through project
 
 
 ## 1) Open Landing page
+
+image.png
