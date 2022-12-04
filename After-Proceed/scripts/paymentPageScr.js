@@ -24,6 +24,16 @@ function displayCartItemsOnPaymentPage() {
         console.log(userCart.length);
         console.log("ram");
 
+        var showAddressOnPayment = document.getElementById("show-address-on-payment-ID");
+        showAddressOnPayment.textContent = "";
+        var userAddress = JSON.parse(localStorage.getItem("userAddress"));
+
+        for (let index = 0; index < 3; index++) {
+            const element = userAddress[index];
+            showAddressOnPayment.textContent += element;
+        }
+
+
     });
 }
 
