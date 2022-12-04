@@ -24,3 +24,5 @@ Please follow following steps to go through project
 ## 2) Search Products Functionality:
 We have implemented search functionalities in this you can search product of any brand in this
 
+<img src="https://raw.githubusercontent.com/code735/Nykaa_Clone/main/images/Search%20Products.png" alt="">
+
