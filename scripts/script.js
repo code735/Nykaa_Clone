@@ -7,8 +7,8 @@ var data = [
     prodname: "Makeup Revolution Hot Shot Kombucha Kiss Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/2/f200c585057566572804_1.jpg",
-    str_price: "₹812",
-    price: "₹750",
+    str_price: "812",
+    price: "750",
   },
   {
     brand: "Makeup Revolution",
@@ -17,8 +17,8 @@ var data = [
     prodname: "Revolution Relove Glow Fix Stick",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/4/04bcb845057566296502_-_1.jpg",
-    str_price: "₹699",
-    price: "₹629",
+    str_price: "699",
+    price: "629",
   },
   {
     brand: "Makeup Revolution",
@@ -27,8 +27,8 @@ var data = [
     prodname: "Makeup Revolution Pore Blur Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/5/f5ef6f55057566076579_1.jpg",
-    str_price: "₹850",
-    price: "₹723",
+    str_price: "850",
+    price: "723",
   },
   {
     brand: "Makeup Revolution",
@@ -37,8 +37,8 @@ var data = [
     prodname: "Makeup Revolution Liquid Powder Make Up Serum",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/c/ac092e85057566430845_-_1.jpg",
-    str_price: "₹1150",
-    price: "₹1035",
+    str_price: "1150",
+    price: "1035",
   },
   {
     brand: "Makeup Revolution",
@@ -47,8 +47,8 @@ var data = [
     prodname: "Makeup Revolution Illuminating Prime & Fix Duo Gift Set",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/6/96a071c1531009-revolution-illuminatingprime-fixduo_1.jpg",
-    str_price: "₹1550",
-    price: "₹1473",
+    str_price: "1550",
+    price: "1473",
   },
   {
     brand: "Makeup Revolution",
@@ -57,8 +57,8 @@ var data = [
     prodname: "Makeup Revolution Hydrate Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/1/c12ab845057566479165_-_1.jpg",
-    str_price: "₹850",
-    price: "₹723",
+    str_price: "850",
+    price: "723",
   },
   {
     brand: "Makeup Revolution",
@@ -67,8 +67,8 @@ var data = [
     prodname: "Revolution Relove Blur Fix Stick",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/004bb845057566479196_-_1.jpg",
-    str_price: "₹699",
-    price: "₹629",
+    str_price: "699",
+    price: "629",
   },
   {
     brand: "Makeup Revolution",
@@ -77,8 +77,8 @@ var data = [
     prodname: "Makeup Revolution Mattify Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/8/08636f55057566076609_1.jpg",
-    str_price: "₹850",
-    price: "₹723",
+    str_price: "850",
+    price: "723",
   },
   {
     brand: "Makeup Revolution",
@@ -87,8 +87,8 @@ var data = [
     prodname: "Revolution Relove H2o Hydrate Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/004bb845057566479196_-_1.jpg",
-    str_price: "₹599",
-    price: "₹569",
+    str_price: "599",
+    price: "569",
   },
   {
     brand: "Makeup Revolution",
@@ -97,8 +97,8 @@ var data = [
     prodname: "Makeup Revolution Prime Bright Brightening Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/6/16be621makeu00000104_new_1.jpg",
-    str_price: "₹1150",
-    price: "₹1035",
+    str_price: "1150",
+    price: "1035",
   },
   {
     brand: "Makeup Revolution",
@@ -107,8 +107,8 @@ var data = [
     prodname: "Revolution Relove Pore Vanish Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/004bb845057566479196_-_1.jpg",
-    str_price: "₹599",
-    price: "₹569",
+    str_price: "599",
+    price: "569",
   },
   {
     brand: "Makeup Revolution",
@@ -117,8 +117,8 @@ var data = [
     prodname: "Revolution Relove Super Matte Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/e/8e80b845057566479189_-_1.jpg",
-    str_price: "₹599",
-    price: "₹569",
+    str_price: "599",
+    price: "569",
   },
   {
     brand: "Makeup Revolution",
@@ -127,8 +127,8 @@ var data = [
     prodname: "Makeup Revolution Rehab Retinol Rescue Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/9/69f0c585057566442855_1.jpg",
-    str_price: "₹950",
-    price: "₹903",
+    str_price: "950",
+    price: "903",
   },
   {
     brand: "Makeup Revolution",
@@ -137,8 +137,8 @@ var data = [
     prodname: "Revolution Relove Power Fix Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/7/4761b845057566479172_-_1.jpg",
-    str_price: "₹599",
-    price: "₹569",
+    str_price: "599",
+    price: "569",
   },
   {
     brand: "Makeup Revolution",
@@ -147,8 +147,8 @@ var data = [
     prodname: "Revolution Relove H2o Hydrate Fix Stick",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/d/1d15b845057566359870_-_1.jpg",
-    str_price: "₹699",
-    price: "₹629",
+    str_price: "699",
+    price: "629",
   },
 
   //   lakme / face / face primer
@@ -159,8 +159,8 @@ var data = [
     prodname: "Lakme Absolute Blur Perfect Makeup Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/l/a/lakm_-absolute-blur-perfect-makeup-primer.jpg",
-    str_price: "₹800",
-    price: "₹480",
+    str_price: "800",
+    price: "480",
   },
   {
     brand: "Lakme",
@@ -169,8 +169,8 @@ var data = [
     prodname: "Lakme 9 to 5 Primer + Matte Powder Foundation Compact",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/2/02e3d0d8901030654886_h.jpg",
-    str_price: "₹600",
-    price: "₹360",
+    str_price: "600",
+    price: "360",
   },
   {
     brand: "Lakme",
@@ -179,8 +179,8 @@ var data = [
     prodname: "Lakme Absolute Blur Perfect Makeup Primer - Mini",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/4/24815_h-8901030790065.jpg",
-    str_price: "₹299",
-    price: "₹239",
+    str_price: "299",
+    price: "239",
   },
   {
     brand: "Lakme",
@@ -189,8 +189,8 @@ var data = [
     prodname: "Lakme Absolute Under Cover Gel Face Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/4/24358_h-8901030725692_1.jpg",
-    str_price: "₹800",
-    price: "₹480",
+    str_price: "800",
+    price: "480",
   },
   {
     brand: "Lakme",
@@ -199,8 +199,8 @@ var data = [
     prodname: "Lakme Glow Gold Combo",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/1/f1b73e7LAKME00000473_1.jpg",
-    str_price: "₹1475",
-    price: "₹811",
+    str_price: "1475",
+    price: "811",
   },
   {
     brand: "Lakme",
@@ -209,8 +209,8 @@ var data = [
     prodname: "Lakme Absolute Blur Perfect Makeup Primer + Insta Liner Eye ...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/n/y/nylakmecom424.jpg",
-    str_price: "₹940",
-    price: "₹705",
+    str_price: "940",
+    price: "705",
   },
   {
     brand: "Lakme",
@@ -219,8 +219,8 @@ var data = [
     prodname: "Lakme Prime & Glow Combo",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/b/ebf5fa5LAKME00000440_1.jpg",
-    str_price: "₹1450",
-    price: "₹870",
+    str_price: "1450",
+    price: "870",
   },
   {
     brand: "Lakme",
@@ -229,8 +229,8 @@ var data = [
     prodname: "Lakme Absolute Illuminating Blush Shimmer Brick - In Pink + ...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/n/y/nylakmecom434_23895_23657_1.jpg",
-    str_price: "₹1575",
-    price: "₹1134",
+    str_price: "1575",
+    price: "1134",
   },
   {
     brand: "Lakme",
@@ -239,8 +239,8 @@ var data = [
     prodname: "Lakme Absolute Dew Serum Foundation + Primer",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/b/5b6a3beLAKME00000654.jpg",
-    str_price: "₹1675",
-    price: "₹1005",
+    str_price: "1675",
+    price: "1005",
   },
   {
     brand: "Lakme",
@@ -249,8 +249,8 @@ var data = [
     prodname: "Lakme Eyeconic Curling Mascara - Black + Absolute Blur Perfe...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/8/989eb93nylakmecom437_old_1.jpg",
-    str_price: "₹1275",
-    price: "₹956",
+    str_price: "1275",
+    price: "956",
   },
   {
     brand: "Lakme",
@@ -259,8 +259,8 @@ var data = [
     prodname: "Lakme Eyeconic Curling Mascara - Black + Absolute Blur Perfe...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/8/989eb93nylakmecom437_old_1.jpg",
-    str_price: "₹1275",
-    price: "₹956",
+    str_price: "1275",
+    price: "956",
   },
   {
     brand: "Lakme",
@@ -269,8 +269,8 @@ var data = [
     prodname: "Lakme Eyeconic Curling Mascara - Black + Absolute Blur Perfe...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/8/989eb93nylakmecom437_old_1.jpg",
-    str_price: "₹1275",
-    price: "₹956",
+    str_price: "1275",
+    price: "956",
   },
   {
     brand: "Lakme",
@@ -279,8 +279,8 @@ var data = [
     prodname: "Lakme Eyeconic Curling Mascara - Black + Absolute Blur Perfe...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/8/989eb93nylakmecom437_old_1.jpg",
-    str_price: "₹1275",
-    price: "₹956",
+    str_price: "1275",
+    price: "956",
   },
   {
     brand: "Lakme",
@@ -289,64 +289,10 @@ var data = [
     prodname: "Lakme Eyeconic Curling Mascara - Black + Absolute Blur Perfe...",
     img_url:
       "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/8/989eb93nylakmecom437_old_1.jpg",
-    str_price: "₹1275",
-    price: "₹956",
+    str_price: "1275",
+    price: "956",
   },
 ];
-
-// Show Carts Data
-var cart = JSON.parse(localStorage.getItem("carts")) || [];
-document.getElementById("cart_counter").textContent = cart.length;
-var prodcheck = [];
-
-product_display();
-function product_display() {
-  cart.map(function (elem) {
-    if (prodcheck.includes(elem.prodname)) {
-      document.getElementById(elem.prodname).textContent =
-        "Qty: " + countQty(elem.prodname);
-    } else {
-      prodcheck.push(elem.prodname);
-      var div = document.createElement("div");
-
-      var img = document.createElement("img");
-      img.setAttribute("src", elem.img_url);
-
-      var h6 = document.createElement("h6");
-      h6.textContent = elem.prodname;
-
-      var i = document.createElement("i");
-      i.setAttribute("class", "bi");
-      i.setAttribute("class", "bi-trash3");
-
-      div.setAttribute("class", "bag_product");
-      div.append(img, h6, i);
-
-      var p = document.createElement("p");
-      p.textContent = "Qty: " + countQty(elem.prodname);
-
-      p.setAttribute("id", elem.prodname);
-
-      var wrap = document.createElement("div");
-      wrap.setAttribute("class", "bag_product_wrap");
-      wrap.append(div, p);
-
-      document.getElementById("products_cart_list").append(wrap);
-    }
-  });
-}
-
-// Count Quantity functionality
-function countQty(productname) {
-  var count = 0;
-  cart.map(function (elem) {
-    if (productname == elem.prodname) {
-      count++;
-    }
-  });
-
-  return count;
-}
 
 // remove duplicates
 
@@ -361,10 +307,6 @@ var clean = data.filter(
 localStorage.setItem("data", JSON.stringify(clean));
 
 var brandData = JSON.parse(localStorage.getItem("data"));
-
-console.log(data);
-
-console.log(brandData);
 
 var blink = document.getElementById("blink");
 setInterval(function () {
@@ -664,10 +606,10 @@ brandData.map(function (elem) {
   priceparent.setAttribute("class", "bestseller_item_priceparent");
 
   var normalprice = document.createElement("p");
-  normalprice.textContent = elem.price;
+  normalprice.textContent = "₹" + elem.price;
 
   var str_price = document.createElement("p");
-  str_price.textContent = elem.str_price;
+  str_price.textContent = "₹" + elem.str_price;
   str_price.style.textDecoration = "line-through";
 
   bestseller_item[idx].addEventListener("click", function () {
@@ -689,3 +631,12 @@ brandData.map(function (elem) {
   bestseller_item[idx].append(priceparent);
   idx++;
 });
+
+document.getElementById("cart_counter").textContent = cart.length;
+
+document
+  .getElementById("search_products")
+  .addEventListener("click", function () {
+    var val = document.getElementById("search_products").value;
+    alert("xcv");
+  });

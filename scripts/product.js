@@ -3,7 +3,7 @@ var cart = JSON.parse(localStorage.getItem("carts")) || [];
 display();
 
 function display() {
-  document.getElementById("cart_counter").textContent = cart.length;
+  cart = JSON.parse(localStorage.getItem("carts")) || [];
   var obj = JSON.parse(localStorage.getItem("prod_display"));
 
   var img = document.createElement("img");
@@ -11,8 +11,8 @@ function display() {
   document.getElementById("product_img").append(img);
 
   document.getElementById("product_name").textContent = obj.prodname;
-  document.getElementById("price").textContent = obj.price;
-  document.getElementById("str_price").textContent = obj.str_price;
+  document.getElementById("price").textContent = "₹" + obj.price;
+  document.getElementById("str_price").textContent = "₹" + obj.str_price;
 }
 
 // For bag slider
@@ -39,11 +39,10 @@ document.getElementById("bi_arrow_left").addEventListener("click", function () {
 document.getElementById("add_to_cart").addEventListener("click", function () {
   var obj = JSON.parse(localStorage.getItem("prod_display"));
 
+  
   cart.push(obj);
 
   localStorage.setItem("carts", JSON.stringify(cart));
-
-  document.getElementById("cart_counter").textContent = cart.length;
 
   product_display();
 });

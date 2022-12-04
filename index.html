@@ -520,12 +520,17 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 mr-lg-5 justify-content-center">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search on Nykaa"
-              aria-label="Search"
-            />
+            <div class="search_wrap position-relative">
+                <input
+                class="form-control mr-sm-2"
+                type="text"
+                placeholder="Search on Nykaa"
+                aria-label="Search"
+                value="sd"
+                id="search_products"
+              />
+              <div id="search_suggestions" class="position-absolute w-100"></div>
+            </div>
             <div class="dropdown">
               <button class="dropbtn btn sign-in-btn my-2 my-sm-0 ml-3">
                 Sign in
@@ -579,7 +584,13 @@
             <i class="bi bi-arrow-left" id="bi_arrow_left"></i>
             <h5>Bag</h5>
           </div>
-          <div id="products_cart_list" class="mt-5 p-3"></div>
+          <div id="products_cart_list" class="my-5 p-3"></div>
+          <div class="bag_section_overlay_btm position-fixed p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p id="grand_total">₹0</p>
+              <button id="proceed_btn">Proceed</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -589,7 +600,7 @@
 
     <!-- HERO SECTION -->
     <section class="hero-section">
-      <nav class="btm-nav pt-5 pb-1">
+      <nav class="btm-nav pb-1">
         <ul class="d-flex justify-content-between" style="list-style: none">
           <li><a href="">makeup</a></li>
           <li><a href="">skin</a></li>
@@ -1039,6 +1050,9 @@
       </div>
     </section>
 
+    <!-- NYKAA EVERYDAY SECTION -->
+    <section id="nykaa_everyday"></section>
+
     <!-- POP UP STORES SECTION-->
     <section id="pop_up_stores">
       <div class="pop_up_store_wrapper py-2">
@@ -1057,6 +1071,7 @@
     </section>
 
 
+    <!-- SPECIAL CURATIONS -->
     <section id="special_curations" class="py-4">
       <h3 class="pop_up_store_heading text-center my-5">
         Special Curations 
@@ -1429,6 +1444,7 @@
   crossorigin="anonymous"
 ></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/cart.js"></script>
 
 <!-- Owl Carousel -->
 <script
