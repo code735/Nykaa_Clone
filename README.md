@@ -12,3 +12,10 @@ In this project our team tried to replicate this website.We have used html5 , cs
         <li>BOOTSTRAP</li>
         <li>LOCALSTORAGE</li>
     </ul>
+
+# How to go through project
+
+Please follow following steps to go through project
+
+
+## 1) Open Landing page
