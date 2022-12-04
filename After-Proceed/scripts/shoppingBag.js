@@ -23,11 +23,11 @@ function displayCartItems() {
 
     });
 }
-console.log(userCart.length);
-console.log("ram");
-var disVar1 = elem.price;
-var disVar2 = elem.str_price;
-preDiscount.textContent = Math.round(100 - ((disVar1.replace('₹', '')) / disVar2.replace('₹', '') * 100)) + "%";
+// console.log(userCart.length);
+// console.log("ram");
+// var disVar1 = elem.price;
+// var disVar2 = elem.str_price;
+// preDiscount.textContent = Math.round(100 - ((disVar1.replace('₹', '')) / disVar2.replace('₹', '') * 100)) + "%";
 
 // aaaaaaaaaaaaaaaa
 
