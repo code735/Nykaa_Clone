@@ -85,3 +85,8 @@ document.getElementById("bi_arrow_left").addEventListener("click", function () {
   document.getElementById("bag_section").style.display = "none";
   document.querySelector("body").style.overflow = "auto";
 });
+
+
+document.getElementById("proceed_btn").addEventListener("click",function(){
+  window.open("./After-Proceed/shoppingBag.html");
+});

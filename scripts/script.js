@@ -633,10 +633,3 @@ brandData.map(function (elem) {
 });
 
 document.getElementById("cart_counter").textContent = cart.length;
-
-document
-  .getElementById("search_products")
-  .addEventListener("click", function () {
-    var val = document.getElementById("search_products").value;
-    alert("xcv");
-  });
