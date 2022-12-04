@@ -19,4 +19,4 @@ Please follow following steps to go through project
 
 
 ## 1) Open Landing page
-https://raw.githubusercontent.com/code735/Nykaa_Clone/main/images/Landing%20page.png
+(https://github.com/code735/Nykaa_Clone/blob/12dfbc09ad229a0e3011a6c631ef9455062dc2b9/images/Landing%20page.png)
