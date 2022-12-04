@@ -1,10 +1,12 @@
 #header-Shoppingbag-ID {
     display: flex;
-    justify-content: space-between;
-    margin-left: 6%;
     width: 100%;
     align-items: center;
-    margin-left: auto;
+    top: 0;
+    padding: 17px 0;
+    z-index: 3;
+    background: white;
+    box-shadow:
 }
 
 

@@ -39,3 +39,8 @@
     font-weight: bold;
     margin-left: 20px;
 }
+
+#products_cart_list {
+    overflow-y: scroll;
+    height: 66%;
+}
