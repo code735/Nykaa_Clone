@@ -1,1 +1,1 @@
-# Nykaa_Clone
+# Nykaa-Clone

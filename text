@@ -1,0 +1,76 @@
+// Show Carts Data
+var cart = JSON.parse(localStorage.getItem("carts")) || [];
+document.getElementById("cart_counter").textContent = cart.length;
+var prodcheck = [];
+product_display();
+function product_display() {
+  document.getElementById("cart_counter").textContent = cart.length;
+  countPrice();
+  cart.map(function (elem) {
+    if (prodcheck.includes(elem.prodname)) {
+      countPrice();
+    } else {
+      prodcheck.push(elem.prodname);
+      var div = document.createElement("div");
+
+      var img = document.createElement("img");
+      img.setAttribute("src", elem.img_url);
+
+      var h6 = document.createElement("h6");
+      h6.textContent = elem.prodname;
+
+      var i = document.createElement("i");
+      i.setAttribute("class", "bi");
+      i.setAttribute("class", "bi-trash3");
+      i.addEventListener("click", function () {
+        removecartprod(elem.prodname);
+      });
+
+      div.setAttribute("class", "bag_product");
+      div.append(img, h6, i);
+
+      var p = document.createElement("p");
+      p.setAttribute("id", elem.prodname);
+
+      var wrap = document.createElement("div");
+      wrap.setAttribute("class", "bag_product_wrap");
+      wrap.append(div, p);
+
+      document.getElementById("products_cart_list").append(wrap);
+    }
+  });
+}
+
+// remove cart prod
+function removecartprod(name) {
+  cart = JSON.parse(localStorage.getItem("carts"));
+  for (let i = 0; i < cart.length; i++) {
+    if (name == cart[i].prodname) {
+      cart.splice(i, 1);
+      localStorage.setItem("carts", JSON.stringify(cart));
+      product_display();
+      break;
+    }
+  }
+
+  var count = 0;
+  cart.map(function (elem) {
+    if (elem.prodname == name) {
+      count++;
+    }
+  });
+  document.getElementById(name).textContent = "Qty: " + count;
+  console.log(cart);
+}
+
+// Cart Price count
+function countPrice() {
+  var total = 0;
+  cart.map(function (elem) {
+    total += parseInt(elem.price);
+  });
+
+  document.getElementById("grand_total").textContent = "₹" + total;
+}
+
+// Count Quantity functionality
