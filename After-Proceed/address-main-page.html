@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Address</title>
+
+    <!-- For this page I using INLINE CSS ONLY -->
+    <style>
+        #address-page-parent-box-ID {
+            display: flex;
+            flex-direction: column;
+            padding-left: 162px;
+            padding-right: 162px;
+            position: relative;
+            margin-top: 21px;
+            height: calc(100vh - 65px);
+        }
+
+        #first-main-div-choose-address-ID {
+            display: flex;
+
+            font-family: Inter, sans-serif;
+        }
+
+        #first-main-div-choose-address-ID>div p:first-child {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 40px;
+            color: rgba(0, 19, 37, 0.92);
+            margin: 0px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #first-main-div-choose-address-ID>div+div {
+            margin-top: -3%;
+            margin-right: -4%;
+            margin-bottom: 7%;
+
+
+        }
+
+        #first-main-div-choose-address-ID>div p:nth-child(2) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(0, 19, 37, 0.64);
+            margin: 0px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #second-main-div-choose-address-ID {
+            display: flex;
+        }
+
+        #add-new-address-ID {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            border: 1px dashed rgba(0, 19, 37, 0.16);
+            border-radius: 8px;
+            min-width: 326px;
+            min-height: 148px;
+            flex-basis: 50%;
+            margin-bottom: 14px;
+            padding: 24px;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        .user-cart-details-CLASS {
+            padding-top: 24px;
+            display: flex;
+            flex-direction: column;
+
+            right: 11%;
+            width: 22%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            color: rgba(0, 19, 37, 0.92);
+            margin: 0px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .bag-quantity-CLASS {
+            display: flex;
+            padding: 16px 0px;
+            -webkit-box-pack: center;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: rgb(255, 115, 0); */
+        }
+
+        .bag-price-details-CLASS {
+            display: flex;
+            padding: 8px 0px;
+            -webkit-box-pack: center;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: aqua; */
+
+        }
+
+        .nykaa-trust-payment-CLASS {
+            padding: 12px 17px;
+            background: rgb(249, 250, 250);
+            border-radius: 8px;
+            margin-top: 12px;
+            display: flex;
+        }
+
+        .nykaa-trust-payment-CLASS p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0px;
+            color: rgba(0, 19, 37, 0.92);
+            margin: 0px;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+    <!-- For this page INLINE CSS END-->
+    <!-- css for sidebar overlay  -->
+    <link rel="stylesheet" href="styles/sideBarOverlay.css">
+    <!-- Css for header  -->
+    <link rel="stylesheet" href="styles/headerShoppingBagStyle.css">
+
+</head>
+
+<body>
+
+    <!-------- header placed here --------->
+    <div id="header-Shoppingbag-ID">
+
+        <div id="logo-Shoppingbag-ID">
+            <span>
+                <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/nykaa-logo.svg" alt=""
+                    srcset="">
+            </span>
+        </div>
+        <div id="progress-steps-ID">
+            <div class="steps-CLASS">
+                <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/tick-icon.svg" alt=""
+                    srcset="">
+
+                <span>
+                    <p> Sign Up </p>
+                </span>
+            </div>
+            <hr>
+            <div class="steps-CLASS">
+                <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/edit-icon.svg" alt=""
+                    srcset="">
+                <span>
+                    <p> Address </p>
+                </span>
+            </div>
+            <hr>
+
+            <div class="steps-CLASS">
+                <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/step-3-icon.svg" alt=""
+                    srcset="">
+                <span>
+                    <p> Payment </p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-------- header end  here --------->
+
+    <div id="address-page-parent-box-ID">
+        <div id="first-main-div-choose-address-ID">
+            <div>
+                <p>Choose Address</p>
+                <p>Detailed address will help our delivery partner reach your doorstep quickly
+                </p>
+            </div>
+            <div>
+                <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/header-address.svg" alt=""
+                    srcset="">
+            </div>
+
+        </div>
+        <div id="second-main-div-choose-address-ID">
+            <div id="add-new-address-ID">
+                <div>
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/plus-icon.svg" alt="">
+                    <p>Add new Address</p>
+                </div>
+            </div>
+            <div class="user-cart-details-CLASS">
+                <div class="bag-quantity-CLASS">
+                    <div>
+                        <p>Bag</p>
+                    </div>
+                    <div class="items-count-CLASS"> 2 items </div>
+                </div>
+
+                <div class="bag-price-details-CLASS">
+                    <div>
+                        <p>Price Details</p>
+                    </div>
+                    <div class="items-total-value-CLASS"> ₹1999 </div>
+
+                </div>
+                <br>
+                <div class="nykaa-trust-payment-CLASS">
+                    <p>Buy authentic products. Pay securely. Easy returns and exchange</p>
+                    <span>
+
+                    </span>
+                    <div>
+                        <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/pay-secure-lock.png"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- BAG SECTION -->
+        <section id="bag_section">
+            <div class="bag_section_wrapper d-flex">
+                <div id="bag_section_overlay" class=""></div>
+                <div id="bag_items_display" class="">
+                    <div class="bag_section_overlay_head py-1 position-fixed w-100">
+                        <i class="bi bi-arrow-left" id="bi_arrow_left"></i>
+                        <h5>Bag</h5>
+                    </div>
+                    <div id="products_cart_list" class="mt-5 p-3">
+                        <div class="sidebar-address-main-div-CLASS">
+                            <form id="my-address-form">
+                                <header>Address</header>
+                                <div class="address-first-div-CLASS">
+                                    <input type="number" placeholder="Pincode">
+                                    <input type="text" placeholder="House/ Flat/ Office No.">
+                                    <input type="text" placeholder="Road Name/Area/ Colony">
+                                </div>
+                                <div class="address-second-div-CLASS">
+                                    <input type="text" name="" id="" placeholder="Name">
+                                    <input type="number" name="" id="" placeholder="Phone">
+                                    <input type="email" name="" id="" placeholder="Email Id(Optional)">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pt-5 lg-rem"></div>
+        <div class="pt-5"></div>
+        <script>
+
+            // For bag slider
+
+            document.getElementById("bi_arrow_left").style.cursor = "pointer";
+
+            document.getElementById("add-new-address-ID").addEventListener("click", function () {
+                document.getElementById("bag_section").style.display = "block";
+                document.querySelector("body").style.overflow = "hidden";
+            });
+
+
+
+            document.getElementById("bag_section_overlay").addEventListener("click", function () {
+                document.getElementById("bag_section").style.display = "none";
+                document.querySelector("body").style.overflow = "auto";
+            });
+
+            document.getElementById("bi_arrow_left").addEventListener("click", function () {
+                document.getElementById("bag_section").style.display = "none";
+                document.querySelector("body").style.overflow = "auto";
+            });
+        </script>
+
+</body>
+
+</html>
+
+<script src="../After-Proceed/scripts/shoppingBag.js"></script>

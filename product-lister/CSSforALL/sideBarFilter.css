@@ -1,0 +1,93 @@
+#face-primer-sidebar-ID {
+    flex-grow: 2;
+    margin-left: 2%;
+    width: 36%;
+    max-width: 280px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+}
+
+#ok {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    max-width: 200px;
+    height: 100%;
+    min-width: 190px;
+    max-height: inherit;
+}
+
+.accordion {
+    font-family: Inter, Roboto, Arial, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    /* box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px; */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: solid #6969694a;
+    border-width: thin;
+    /* height: 1%; */
+    height: 50px;
+    max-height: 50px;
+}
+
+.active {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.panel {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-box {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-around;
+}
+
+.control {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgb(0, 49, 37);
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-family: Inter, Roboto, Arial, sans-serif;
+}
+
+#span-accordian-title-ID {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+
+}

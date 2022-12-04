@@ -1,0 +1,660 @@
+body {
+    background-color: #f3f3f3fa;
+}
+
+@media screen and (max-width: 600px) {
+
+    #products-grid-ID {
+        flex-grow: 3;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 40px 30px;
+        border: #FC2779;
+        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+        padding: 5%;
+        padding-top: 0px;
+    }
+
+
+}
+
+#page-title-name-ID {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: Inter, Roboto, Arial, sans-serif;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+
+#title-listing {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: Inter, Roboto, Arial, sans-serif;
+    padding: 3%;
+}
+
+
+/* @media screen and (min-width: 601px) { */
+#products-grid-ID {
+    flex-grow: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    border: #FC2779;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+    padding: 5%;
+    padding-top: 0px;
+}
+
+/* } */
+
+
+.cart-product-div-class {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ffffff;
+    font-family: Inter, Roboto, Arial, sans-serif;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-product-div-class h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    height: 42px;
+    margin-bottom: 1%;
+    text-align: center;
+    color: #001325;
+    text-overflow: ellipsis;
+}
+
+
+
+#keyword-div-ID {
+
+
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* justify-content: center; */
+
+}
+
+#keyword-ul-ID {
+    /* padding-right: 100px; */
+    /* padding: 5%; */
+    padding-top: 10px;
+    padding-right: 30px;
+    margin-left: -20px;
+}
+
+#keyword-li-ID {
+    list-style: none;
+    font-size: 12px;
+    color: #FC2779
+        /* text-align: center; */
+        /* padding: 2%; */
+}
+
+img {
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
+#products-grid-ID h5 {
+    text-align: center;
+
+}
+
+
+
+.price-Box-div-CLASS {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price-Box-div-CLASS> :first-child {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.price-Box-div-CLASS> :nth-child(2) {
+    color: black;
+    padding-left: -20px;
+}
+
+.price-Box-div-CLASS> :nth-child(3) {
+    color: rgb(89, 222, 89);
+}
+
+#extra-discount-div-ID {
+
+    text-align: center;
+    color: #FC2779;
+
+}
+
+#add-to-cart-button-ID {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    background-color: #FC2779;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+#wishlist-button-ID {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+#hoverCartSlide-ID {
+    /* display: none; */
+    width: 100%;
+    height: 50px;
+    visibility: hidden;
+}
+
+#hoverCartSlide-ID img {
+    width: 130%;
+    padding-left: 3px;
+    height: 100%;
+
+}
+
+.cart-product-div-class:hover #hoverCartSlide-ID {
+    display: flex;
+    visibility: visible;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+/* TOP-NAVBAR */
+.nav-top-parent {
+    background: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg");
+    padding: 8px 0;
+    color: black;
+    font-weight: 600;
+}
+
+.top-nav-links a {
+    color: black;
+    padding: 0 15px;
+    font-weight: 500;
+    border-right: 1px solid black;
+}
+
+.top-nav-links a:nth-child(4) {
+    border: none;
+}
+
+.top-nav-links a i {
+    margin-right: 5px;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100vw;
+    background: white;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 0 7%;
+    border-bottom: 1px solid #806a6a5e;
+}
+
+.navbar-brand {
+    width: 7.5%;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 80vw;
+    left: -1;
+    color: #fc2779;
+    margin-top: 42%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    box-shadow: 0 111px 200px rgb(48, 47, 47);
+}
+
+.dropdown {
+    padding: 20px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar ul li {
+    padding: 0 10px;
+}
+
+.navbar a {
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+
+.navbar button:hover,
+.navbar a:hover {
+    color: #fc2779;
+    text-decoration: none;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.navbar input {
+    background: #f4f4f4;
+}
+
+.sign-in-btn {
+    background-color: #fc2779;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.navbar form a {
+    font-size: 20px;
+}
+
+#top-brands {
+    margin-top: 5%;
+}
+
+#top-brands ul {
+    list-style: disc;
+    padding: 10px;
+}
+
+#top-brands ul a {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fc2779;
+}
+
+#top-brands li {
+    padding: 0;
+}
+
+#top-brands h6 {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 20px 0 !important;
+}
+
+#input-brand {
+    background: none;
+    padding: 5px 10px;
+    border: 1px solid rgb(199, 197, 197);
+}
+
+.brand-showcase {
+    text-align: center;
+    background: #f3f3f3;
+    padding: 20px;
+    width: 69%;
+}
+
+.brand-showcase nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand-showcase nav a {
+    width: 150px;
+    padding: 10px 0;
+    display: block;
+    text-transform: uppercase;
+    background: #d8d8d8;
+    color: rgba(3, 2, 26, 0.8);
+}
+
+.brand-showcase nav a:hover {
+    color: white;
+    background-color: #fc2779;
+}
+
+.search-brand {
+    overflow-y: scroll;
+    max-height: 70vh;
+    width: 30%;
+    padding: 15px;
+}
+
+.search-brand input {
+    background: white !important;
+}
+
+.nav-item:nth-child(2) .dropdown-content {
+    left: -15vw;
+    margin-top: 48%;
+}
+
+.nav-item:nth-child(4) .dropdown-content {
+    left: -25vw;
+    margin-top: 23%;
+}
+
+.nav-item:nth-child(5) .dropdown-content {
+    left: -33vw;
+    margin-top: 24%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.sign-in-content {
+    left: -8vw;
+    width: 24vw;
+    overflow-y: hidden;
+    margin-top: 24%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sign-in-content h3 {
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.sign-in-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.sign-in-content a p {
+    color: #fc2779;
+    font-size: 15px;
+}
+
+.sign_in_options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_in_head {
+    padding: 0 13px;
+}
+
+.sign_in_options a {
+    width: 94%;
+    height: 50px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #fc2779;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.sign_in_options img {
+    object-fit: contain;
+    height: 100%;
+    width: 12%;
+}
+
+.sign_in_head {
+    padding: 0 10px;
+}
+
+.BeautyAdviceBox {
+    display: block;
+    width: 22%;
+}
+
+.BeautyAdviceBox img {
+    border-radius: 10px;
+}
+
+#brand_render {
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    place-items: center;
+    place-content: center;
+    gap: 25px;
+    max-height: 70vh;
+}
+
+.MegaDropdown-ContentHeading {
+    color: rgba(3, 2, 26, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.MegaDropdown-ContentInner {
+    padding: 0 20px;
+}
+
+.bgGrey {
+    background-color: #e8e8e8;
+}
+
+.glamnfitstoreBox a {
+    font-size: 12px;
+}
+
+.addMargintop {
+    margin-top: 1rem;
+}
+
+.pop-window {
+    display: grid;
+    grid-template-columns: 14% 18% 14% 19% 27.6%;
+    gap: 2%;
+    padding-top: 10px;
+}
+
+.pop-window ul {
+    list-style: none;
+}
+
+.pop-window li {
+    padding: 0 !important;
+}
+
+.pop-window a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(3, 2, 26, 0.5) !important;
+}
+
+/* Content */
+#content {
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+/* Bottom navbar */
+.btm-nav {
+    padding: 0 8%;
+    background-color: white;
+    border-bottom: 1px solid rgb(185, 181, 181);
+}
+
+.btm-nav a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fc2779;
+}
+
+.btm-nav a:hover {
+    border-bottom: 4px solid #fc2779;
+}
+
+.offers-link {
+    background: url("https://adn-static1.nykaa.com/media/wysiwyg/HeaderIcons/menusprite.png") -193px -44px no-repeat;
+    width: 102px;
+    display: block;
+    height: 27px;
+}
+
+/* Carousel -2  */
+.owl-item {
+    margin: 20px 20px;
+}
+
+/* Discount Coupon */
+.discount-cpn {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.top-brands-child-text {
+    padding-top: 250px;
+}
+
+.top-brands-child-text p {
+    background: white !important;
+    margin: 0 10px;
+    padding: 20px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.top-brands-child1 {
+    background: url("https://images-static.nykaa.com/uploads/64d93257-a20b-4eab-a461-cc4d829fdb2b.jpg?tr=w-600,cm-pad_resize");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-brands-child2 {
+    background: url("https://images-static.nykaa.com/uploads/9a48b248-c665-4405-8491-d76a1f149d62.jpg?tr=w-600,cm-pad_resize");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-brands-child3 {
+    background: url("https://images-static.nykaa.com/uploads/2f17d8c6-3b59-4d41-a13e-aaa13e444c03.jpg?tr=w-600,cm-pad_resize");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-brands-child4 {
+    background: url("https://images-static.nykaa.com/uploads/81a37e3d-e0f5-47f9-ae89-ca88a8751ef6.jpg?tr=w-600,cm-pad_resize");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-brands-child5 {
+    background: url("https://images-static.nykaa.com/uploads/4964842b-48b6-44b9-ae12-4a852a8e4a52.jpg?tr=w-600,cm-pad_resize");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-brands-child6 {
+    background: url("https://images-static.nykaa.com/uploads/48dd9cee-eecc-47a6-89c3-85c58c712861.png?tr=w-600,cm-pad_resize");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-brands-wrapper {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    place-content: center;
+    gap: 20px;
+}
+
+/* box-shadow */
+.box_sh {
+    box-shadow: 0px 0px 20px #d9d9d9;
+}
+
+/* --------------------- */
+#cart_counter {
+    font-size: 14px;
+    background-color: #fc2779;
+    color: white;
+    padding: 3px 9px;
+    border-radius: 25px;
+    position: absolute;
+    left: 17px;
+    top: -5px;
+}
+
+.bi-bag {
+    font-size: 27px;
+}
+
+#bag_section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 16;
+}
+
+#bag_section_overlay {
+    height: 100vh;
+    width: 70%;
+    background: black;
+    opacity: 0.5;
+}
+
+#bag_items_display {
+    width: 30%;
+    height: 100vh;
+    background: white;
+}
+
+.bag_section_overlay_head {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a3a2a2;
+    padding: 0 20px;
+}
+
+.bi-arrow-left {
+    font-weight: bold;
+    font-size: 33px;
+}
+
+#bag_section h5 {
+    font-weight: bold;
+    margin-left: 20px;
+}
