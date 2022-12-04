@@ -2,17 +2,12 @@
 // ------>"data" KEY for accessing local storage products data 
 var product_data = JSON.parse(localStorage.getItem("data"));
 // ------>"data" KEY for accessing local storage products data 
+// calling first time display products ---->
+display_Products(product_data);
 
 function display_Products(productDataDisplay) {
     console.log("product_data");
     console.log(product_data);
-    product_data = productDataDisplay;
-    // var filterd_Data = product_data.filter(function (elem, index) {
-    //     console.log("Default Filter Working");
-    //     console.log(elem.category);
-    //     return elem.sub_category.toUpperCase() == "";
-
-    // });
 
     productDataDisplay.map(function (elem) {
         var productcarddiv = document.createElement("div");
@@ -227,5 +222,3 @@ document.getElementById("bi_arrow_left").addEventListener("click", function () {
     document.querySelector("body").style.overflow = "auto";
 });
 
-// calling first time display products ---->
-display_Products(product_data);

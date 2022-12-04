@@ -2,14 +2,28 @@
 // var product_data = JSON.parse(localStorage.getItem("data"));
 // ------>"data" KEY for accessing local storage products data 
 
-
+//  variable for price and discount filters-- -> 
+var newProdDataForFilters;
+var BrandFilterFlag = false;
 // BRAND -----------------------------------------------------filter Functions implemented HERE
 
 
 var targetBrand = document.querySelectorAll(".filter_select_CLASS");
 for (let index = 0; index < targetBrand.length; index++) {
-    targetBrand[index].addEventListener("input", function () {
-        filterBrandNow(targetBrand[index].value.toUpperCase());
+
+
+    targetBrand[index].addEventListener("change", function () {
+        // page banner changing here ---->
+        document.querySelector(".changeIMG1").setAttribute("src", "https://images-static.nykaa.com/uploads/dbf8a336-0fbc-455e-b758-89b2228bd7b8.jpg?tr=w-1200,cm-pad_resize");
+        document.querySelector(".changeIMG3").setAttribute("src", "https://images-static.nykaa.com/uploads/8c284b3b-6c8f-4c20-a18e-9b8ee885c2d6.jpg?tr=w-2400,cm-pad_resize");
+        // page title changing here --->
+        document.getElementById("page-title-name-ID").textContent = targetBrand[index].value + " Products Collection ";
+
+        if (this.checked) {
+            filterBrandNow(targetBrand[index].value.toUpperCase());
+            console.log("checked");
+        }
+
     });
 
 }
@@ -17,6 +31,7 @@ for (let index = 0; index < targetBrand.length; index++) {
 function filterBrandNow(brandName) {
     console.log("filterBrandNow is running");
     document.querySelector("#products-grid-ID").remove();
+
 
 
 
@@ -30,8 +45,16 @@ function filterBrandNow(brandName) {
     prodDivID.setAttribute("id", "products-grid-ID");
     document.querySelector("#face-primer-middle-div-ID").append(prodDivID);
 
+    BrandFilterFlag = true;
+    newProdDataForFilters = filterd_Data;
+
     display_Products(filterd_Data);
-    product_data = filterd_Data;
+    if (filterd_Data.length >= 1) {
+
+    } else {
+        noProductsDisplay();
+    }
+
     console.log("123-check-Check");
 
 
@@ -39,13 +62,18 @@ function filterBrandNow(brandName) {
 
 
 //BRAND |||||------------------------------------------------------------| filter Functions ENDED HERE
+//
 // PRICE -----------------------------------------------------filter Functions implemented HERE
 
 
 var targetPrice = document.querySelectorAll(".radio_price_CLASS");
 for (let index = 0; index < targetPrice.length; index++) {
-    targetPrice[index].addEventListener("input", function () {
-        filterPriceNow(targetPrice[index].value);
+    targetPrice[index].addEventListener("change", function () {
+        if (this.checked) {
+            filterPriceNow(targetPrice[index].value);
+            console.log("checked");
+        }
+
     });
 
 }
@@ -53,7 +81,12 @@ for (let index = 0; index < targetPrice.length; index++) {
 function filterPriceNow(valueSet) {
     document.querySelector("#products-grid-ID").remove();
 
-    var filterd_Data = product_data.filter(function (elem, index) {
+
+    if (BrandFilterFlag == false) {
+        newProdDataForFilters = product_data;
+    }
+
+    var filterd_Data = newProdDataForFilters.filter(function (elem, index) {
         console.log(valueSet);
         var priceVar = Math.round(elem.price.replace('₹', ''));
         console.log(priceVar);
@@ -70,21 +103,29 @@ function filterPriceNow(valueSet) {
     var prodDivID = document.createElement("div");
     prodDivID.setAttribute("id", "products-grid-ID");
     document.querySelector("#face-primer-middle-div-ID").append(prodDivID);
-
     display_Products(filterd_Data);
-    product_data = filterd_Data;
+    if (filterd_Data.length >= 1) {
+
+    } else {
+        noProductsDisplay();
+    }
+
     console.log("123-check-Check");
 
 
 };
-//BRAND |||||------------------------------------------------------------|filter Functions ENDED HERE
-// PRICE -----------------------------------------------------filter Functions implemented HERE
+//price |||||------------------------------------------------------------|filter Functions ENDED HERE
+// DISCOUNT -----------------------------------------------------filter Functions implemented HERE
 
 
 var targetDiscount = document.querySelectorAll(".radio_Discount_CLASS");
 for (let index = 0; index < targetDiscount.length; index++) {
-    targetDiscount[index].addEventListener("input", function () {
-        filterDiscountNow(targetDiscount[index].value);
+    targetDiscount[index].addEventListener("change", function () {
+        if (this.checked) {
+            filterDiscountNow(targetDiscount[index].value);
+            console.log("checked");
+        }
+
     });
 
 }
@@ -92,7 +133,10 @@ for (let index = 0; index < targetDiscount.length; index++) {
 function filterDiscountNow(valueSet) {
     document.querySelector("#products-grid-ID").remove();
 
-    var filterd_Data = product_data.filter(function (elem, index) {
+    if (BrandFilterFlag == false) {
+        newProdDataForFilters = product_data;
+    }
+    var filterd_Data = newProdDataForFilters.filter(function (elem, index) {
         console.log(valueSet);
         // preDiscount Calculation 
         var disVar1 = elem.price;
@@ -112,14 +156,18 @@ function filterDiscountNow(valueSet) {
     var prodDivID = document.createElement("div");
     prodDivID.setAttribute("id", "products-grid-ID");
     document.querySelector("#face-primer-middle-div-ID").append(prodDivID);
-
     display_Products(filterd_Data);
-    product_data = filterd_Data;
+    if (filterd_Data.length >= 1) {
+
+    } else {
+        noProductsDisplay();
+    }
+
     console.log("123-check-Check");
 
 
 };
-// PRICE -----------------------------------------------------| PRICE  filter Functions ENDED HERE
+// Discount -----------------------------------------------------| Discount  filter Functions ENDED HERE
 
 // NavBar Page Filters Implemented HERE --------------------->
 
@@ -128,6 +176,9 @@ function filterDiscountNow(valueSet) {
 var navBarBrand = document.querySelectorAll(".navbar_brand_select_CLASS");
 for (let index = 0; index < navBarBrand.length; index++) {
     navBarBrand[index].addEventListener("click", function () {
+        // page banner changing here ---->
+        document.querySelector(".changeIMG1").setAttribute("src", "https://images-static.nykaa.com/uploads/af878bff-a8ad-4712-b8c5-1940d818f790.jpg?tr=w-1200,cm-pad_resize");
+        document.querySelector(".changeIMG2").setAttribute("src", "https://images-static.nykaa.com/uploads/62d95f48-98bb-4c78-aac8-72345475661f.jpg?tr=w-2400,cm-pad_resize");
         // page title changing here --->
         document.getElementById("page-title-name-ID").textContent = navBarBrand[index].textContent + " Products Collection ";
         //calling filter function for particular Brand
@@ -138,10 +189,8 @@ for (let index = 0; index < navBarBrand.length; index++) {
 
 function navBarfilterBrandNow(brandName) {
 
-
-
-
     console.log("navBarfilterBrandNow is running");
+
     document.querySelector("#products-grid-ID").remove();
 
 
@@ -155,12 +204,51 @@ function navBarfilterBrandNow(brandName) {
     var prodDivID = document.createElement("div");
     prodDivID.setAttribute("id", "products-grid-ID");
     document.querySelector("#face-primer-middle-div-ID").append(prodDivID);
-
+    BrandFilterFlag = true;
+    newProdDataForFilters = filterd_Data;
     console.log(filterd_Data);
     display_Products(filterd_Data);
+    if (filterd_Data.length >= 1) {
+
+    } else {
+        noProductsDisplay();
+    }
 
     console.log("123-check-Check-NavBarFilter");
 
 
 };
 
+
+
+
+// when no products according to search ----->
+
+function noProductsDisplay() {
+
+    var noProdDiv = document.createElement("div");
+    noProdDiv.setAttribute("id", "no-products-display-ID")
+    // div styling 
+    noProdDiv.style.display = "flex";
+    noProdDiv.style.flexDirection = "column";
+    noProdDiv.style.justifyContent = "center";
+    noProdDiv.style.alignItems = "center";
+    noProdDiv.style.textAlign = "center";
+    noProdDiv.style.marginRight = "-40%";
+
+    var noProdImg = document.createElement("img");
+    noProdImg.setAttribute("src", "https://lh3.googleusercontent.com/drive-viewer/AFDK6gMABZmm-jl8wfSpZU7YxE2Ztmt_7uL87fX-SzgjHh0iXUyI8Jb5zd9E94dNBif90L-kUCQq_k7wmnav9pwzk_M4QXnIqg=w2288-h1590");
+
+    noProdImg.style.width = "200%";
+    noProdImg.style.paddingLeft = "41%";
+
+    // var noProdHead = document.createElement("h2");
+    // noProdHead.textContent = "Thanks for visiting our website!";
+    // var noProdPtag = document.createElement("p");
+    // noProdPtag.textContent = "Unfortunately, we couldn’t find any matches for Your search. Please try searching with another term.";
+    noProdDiv.append(noProdImg);
+    document.getElementById("products-grid-ID").append(noProdDiv);
+    console.log("i.m here no prod");
+
+
+};

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../CSSforALL/Products-Listing-page.css">
     <!-- <link rel="stylesheet" href="../Face-primer/styles/face-prime.css"> -->
@@ -525,18 +526,18 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100"
+                    <img class="d-block w-100 changeIMG1 "
                         src="https://images-static.nykaa.com/uploads/3c9e27f1-705d-4d5a-8ec3-c9c3c28dc9e3.jpg?tr=w-1200,cm-pad_resize"
                         alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100"
+                    <img class="d-block w-100 changeIMG2"
                         src="https://images-static.nykaa.com/uploads/388338e8-81fc-4f05-aab3-84c2b38265ea.jpg?tr=w-2400,cm-pad_resize"
                         alt="Second slide">
                 </div>
 
                 <div class="carousel-item">
-                    <img class="d-block w-100"
+                    <img class="d-block w-100 changeIMG3"
                         src="https://images-static.nykaa.com/uploads/67dc1a42-52d5-4f03-b7eb-ce1e35bf6594.jpg?tr=w-2400,cm-pad_resize"
                         alt="Third slide">
                 </div>
@@ -570,14 +571,14 @@
                     </button>
                     <div class="panel">
                         <div class="control-box css-1ap0cm9"><input class="filter_select_CLASS" name="Brand"
-                                value="Makeup Revolution" type="checkbox"><label class="control control-radio"
+                                value="Makeup Revolution" type="radio"><label class="control control-radio"
                                 for="radio_popularity_undefined">
                                 <div class="control-value"><span class="title">Makeup Revolution</span></div>
                                 <div class="control-indicator radio "></div>
                             </label>
                         </div>
                         <div class="control-box css-1ap0cm9"><input class="filter_select_CLASS" name="Brand"
-                                value="Lakme" type="checkbox"><label class=" control control-radio"
+                                value="Lakme" type="radio"><label class=" control control-radio"
                                 for="radio_popularity_undefined">
                                 <div class="control-value"><span class="title">Lakme
                                     </span></div>
@@ -586,16 +587,16 @@
                             </label>
                         </div>
                         <div class="control-box css-1ap0cm9"><input class="filter_select_CLASS" name="Brand"
-                                value="MyGlamm" type="checkbox"><label class="control control-radio"
+                                value="Loreal Paris" type="radio"><label class="control control-radio"
                                 for="radio_popularity_undefined">
-                                <div class="control-value"><span class="title">MyGlamm
+                                <div class="control-value"><span class="title">Loreal Paris
                                     </span></div>
                                 <div class="control-indicator radio ">
                                 </div>
                             </label>
                         </div>
                         <div class="control-box css-1ap0cm9"><input class="filter_select_CLASS" name="Brand"
-                                value="SUGAR" type="checkbox"><label class="control control-radio"
+                                value="SUGAR" type="radio"><label class="control control-radio"
                                 for="radio_popularity_undefined">
                                 <div class="control-value"><span class="title">SUGAR
 
@@ -605,7 +606,7 @@
                             </label>
                         </div>
                         <div class="control-box css-1ap0cm9"><input class="filter_select_CLASS" name="Brand"
-                                value="Kay Beauty" type="checkbox"><label class="control control-radio"
+                                value="Kay Beauty" type="radio"><label class="control control-radio"
                                 for="radio_popularity_undefined">
                                 <div class="control-value"><span class="title">Kay Beauty
                                     </span></div>
@@ -614,7 +615,7 @@
                             </label>
                         </div>
                         <div class="control-box css-1ap0cm9"><input class="filter_select_CLASS"
-                                value="Maybelline New York" name="Brand" type="checkbox"><label
+                                value="Maybelline New York" name="Brand" type="radio"><label
                                 class="control control-radio" for="radio_popularity_undefined">
                                 <div class="control-value"><span class="title">Maybelline New York
                                     </span></div>
@@ -757,6 +758,7 @@
             </div>
             <br>
             <!-- All products cards making through JS and appended here       -->
+            <!-- <div id="products-grid-ID2"></div> -->
             <div id="products-grid-ID"> </div>
         </div>
 
@@ -766,12 +768,12 @@
 </body>
 
 </html>
-<!-- Main JS included HERE --->
-<script src="../Scripts-for-all/face-primer.js"></script>
 <!-- local Storage JS included HERE -->
-<script src="../../localStorageData/product-Data-localStorage.js"></script>
+<script language="javascript" src="../../localStorageData/product-Data-localStorage.js"></script>
+<!-- Main JS included HERE --->
+<script language="javascript" src="../Scripts-for-all/face-primer.js"></script>
 <!-- products filter JS included HERE -->
-<script src="../Scripts-for-all/filters-productListing.js"></script>
+<script language="javascript" src="../Scripts-for-all/filters-productListing.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

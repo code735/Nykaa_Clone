@@ -1,6 +1,6 @@
 var data = [
     {
-        brand: "Loreal",
+        brand: "Loreal paris",
         prodname: "L'Oreal Paris Glycolic Bright Day Cream With SPF 17",
         img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/f/6f8371cLOREA00000364_1.jpg",
         Keywords: "FEATURED\nBESTSELLER",
@@ -471,6 +471,143 @@ var data = [
 
 
     // Maybelline New York Products Present Here ------->
+    // Loreal Paris products data present here ---- >
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Glycolic Bright Day Cream With SPF 17",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/f/6f8371cLOREA00000364_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹699",
+        price: "₹594",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+
+
+
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Revitalift 1.5% Hyaluronic Acid Serum",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/7/67a7f79LOREA00000002_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹699",
+        price: "₹594",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Glycolic Bright Day Regime",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/e/be291a3LOREA00000395_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹1599",
+        price: "₹1267",
+        extraOff: "17% Extra Off",
+        size_option: "2 Sizes",
+        sub_category: "Cleanser",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Skin"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Hyaluron Moisture 3-step Routine",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/1/81056ceLOrealParis007_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹1999",
+        price: "₹1767",
+        extraOff: "5% Extra Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Infallible 24H Fresh Wear Foundation in a",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/c/ec6b7ab3600523951291.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹1199",
+        price: "₹1099",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Magic Retouch Instant Root",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/9/696b2a23600523192687_2.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹699",
+        price: "₹594",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Infallible 24H Fresh Wear Foundation ",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/e/c/ec6b7abLOREA00000403_5.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹1599",
+        price: "₹1155",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Excellence Creme Triple Care Hair",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/d/7d1af796902395724636_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹699",
+        price: "₹455",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Excellence Creme Triple Care Hair",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/8/f8ebf79LOREA00000090_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹699",
+        price: "₹455",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    },
+    {
+        brand: "Loreal Paris",
+        prodname: "L'Oreal Paris Dermo Expertise Lip And Eye Make-Up Remover",
+        img_url: "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/9/8991380233053_1.jpg",
+        Keywords: "FEATURED\nBESTSELLER",
+        str_price: "₹699",
+        price: "₹449",
+        extraOff: "15% Off",
+        size_option: "2 Sizes",
+        sub_category: "Face Moisturizer, Buy Face Moisturizer online India, Face Moisturizer price India",
+        title: "Moisturizer for Face: Buy Best Face Moisturizer Online in India | Nykaa",
+        category: "Moisturizer for face"
+    }
+
+    // Loreal Paris products data END here ---- >
 
 ];
 // duplicate data removing functionality
