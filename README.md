@@ -23,9 +23,8 @@ Please follow following steps to go through project
 
 ### Responsiveness
 
-#### Small devices 
-<img src="https://raw.githubusercontent.com/code735/Nykaa_Clone/main/images/small%20devices.png
-" alt="">
+#### 1) Small devices 
+<img src="https://github.com/code735/Nykaa_Clone/blob/main/images/small%20devices.png" alt="">
 
 
 ## 2) Search Products Functionality:
