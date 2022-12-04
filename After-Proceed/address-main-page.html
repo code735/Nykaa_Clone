@@ -22,11 +22,13 @@
             position: relative;
             margin-top: 21px;
             height: calc(100vh - 65px);
+            font-family: Inter, sans-serif;
         }
 
         #first-main-div-choose-address-ID {
             display: flex;
-
+            justify-content: space-between;
+            margin: 7% 3%;
             font-family: Inter, sans-serif;
         }
 
@@ -39,13 +41,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        #first-main-div-choose-address-ID>div+div {
-            margin-top: -3%;
-            margin-right: -4%;
-            margin-bottom: 7%;
-
-
-        }
+        #first-main-div-choose-address-ID>div+div {}
 
         #first-main-div-choose-address-ID>div p:nth-child(2) {
             font-size: 14px;
@@ -245,7 +241,43 @@
     </div>
 
 
+    <!-- BAG SECTION -->
+    <section id="bag_section">
+        <div class="bag_section_wrapper d-flex">
+            <div id="bag_section_overlay" class=""></div>
+            <div id="bag_items_display" class="">
+                <div class="bag_section_overlay_head py-1 position-fixed w-100">
+                    <i class="bi bi-arrow-left" id="bi_arrow_left"></i>
+                    <h5>Bag</h5>
+                </div>
+                <div id="products_cart_list" class="mt-5 p-3">
+                    <div class="sidebar-address-main-div-CLASS">
+                        <form id="my-address-form">
+                            <header>Address</header>
+                            <div class="address-first-div-CLASS">
+                                <input class="address-input-CLASS" type="text" placeholder="Pincode" maxlength="6"
+                                    minlength="6">
+                                <input class="address-input-CLASS" type="text" placeholder="House/ Flat/ Office No.">
+                                <input class="address-input-CLASS" type="text" placeholder="Road Name/Area/ Colony">
+                            </div>
+                            <div class="address-second-div-CLASS">
+                                <input class="address-input-CLASS" type="text" name="" id="" placeholder="Name">
+                                <input class="address-input-CLASS" type="text" name="" id="" placeholder="Phone"
+                                    maxlength="10" minlength="10">
+                                <!-- <input class="address-input-CLASS" type="email" name="" id=""
+                                        placeholder="Email Id(Optional)"> -->
+                            </div>
+                            <div id="ship-to-address-div-ID">
+                                <button type="submit" id="ship-to-address-button-ID">Ship to this Address <a
+                                        href=""></a></button>
+                            </div>
 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-------- header end  here --------->
 
@@ -298,44 +330,7 @@
 
             </div>
         </div>
-        <!-- BAG SECTION -->
-        <section id="bag_section">
-            <div class="bag_section_wrapper d-flex">
-                <div id="bag_section_overlay" class=""></div>
-                <div id="bag_items_display" class="">
-                    <div class="bag_section_overlay_head py-1 position-fixed w-100">
-                        <i class="bi bi-arrow-left" id="bi_arrow_left"></i>
-                        <h5>Bag</h5>
-                    </div>
-                    <div id="products_cart_list" class="mt-5 p-3">
-                        <div class="sidebar-address-main-div-CLASS">
-                            <form id="my-address-form">
-                                <header>Address</header>
-                                <div class="address-first-div-CLASS">
-                                    <input class="address-input-CLASS" type="text" placeholder="Pincode" maxlength="6"
-                                        minlength="6">
-                                    <input class="address-input-CLASS" type="text"
-                                        placeholder="House/ Flat/ Office No.">
-                                    <input class="address-input-CLASS" type="text" placeholder="Road Name/Area/ Colony">
-                                </div>
-                                <div class="address-second-div-CLASS">
-                                    <input class="address-input-CLASS" type="text" name="" id="" placeholder="Name">
-                                    <input class="address-input-CLASS" type="text" name="" id="" placeholder="Phone"
-                                        maxlength="10" minlength="10">
-                                    <!-- <input class="address-input-CLASS" type="email" name="" id=""
-                                        placeholder="Email Id(Optional)"> -->
-                                </div>
-                                <div id="ship-to-address-div-ID">
-                                    <button type="submit" id="ship-to-address-button-ID">Ship to this Address <a
-                                            href=""></a></button>
-                                </div>
 
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <div class="pt-5 lg-rem"></div>
         <div class="pt-5"></div>
