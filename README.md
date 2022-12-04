@@ -21,6 +21,13 @@ Please follow following steps to go through project
 ## 1) Open Landing page:
 <img src="https://raw.githubusercontent.com/code735/Nykaa_Clone/main/images/Landing%20page.png" alt="">
 
+### Responsiveness
+
+#### Small devices 
+<img src="https://raw.githubusercontent.com/code735/Nykaa_Clone/main/images/small%20devices.png
+" alt="">
+
+
 ## 2) Search Products Functionality:
 We have implemented search functionalities in this you can search product of any brand in this
 
