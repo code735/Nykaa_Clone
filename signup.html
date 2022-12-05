@@ -145,12 +145,15 @@
       console.log(exist);
       
       var signeduser = localStorage.getItem("signeduser") || "Signin";
+      var sw  = localStorage.getItem("switch") || false;
 
       if(exist.length>0)
       {
         alert("login Succesful");
         window.location.href="index.html"
         signeduser = email;
+        var sw  = true;
+        localStorage.setItem("switch",sw);
         localStorage.setItem("signeduser",signeduser);
       }
       else{

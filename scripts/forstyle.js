@@ -91,8 +91,34 @@ document.getElementById("proceed_btn").addEventListener("click",function(){
   window.open("./After-Proceed/shoppingBag.html");
 });
 
-var signeduser = localStorage.getItem("signeduser") || "signin";
 
-console.log(signeduser);
+// Sign In validation
 
-document.getElementById("changeonsign").textContent = signeduser;
+var signeduser = localStorage.getItem("signeduser") || "Signin";
+var sw  = localStorage.getItem("switch") || false;
+
+signinvalidation();
+
+function signinvalidation(){
+  if(sw){
+    var str = "";
+
+    for(let i=0;i<signeduser.length;i++){
+      if(signeduser.charAt(i)=='@'){
+        break;
+      }
+      str+=signeduser.charAt(i);
+    }
+
+    document.getElementById("changeonsign").style.color="black";
+    document.getElementById("changeonsign").style.background="white";
+    document.getElementById("changeonsign").textContent=str;
+    document.getElementById("changeonsign").style.padding="0";
+    document.getElementById("bi_person").style.fontSize="20px";
+    document.getElementById("sign_in_options_1").style.display="none";
+  }
+  else{
+    document.getElementById("changeonsign").style.marginLeft="10px";
+    document.getElementById("bi_person").style.display="none";
+  }
+}
