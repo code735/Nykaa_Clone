@@ -1029,6 +1029,10 @@ header {
   border-bottom: 1px solid black;
 }
 
+#bi_person{
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .dropdown-content {
     display: none !important;

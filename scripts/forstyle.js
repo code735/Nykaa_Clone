@@ -115,16 +115,21 @@ function signinvalidation(){
     document.getElementById("changeonsign").textContent=str;
     document.getElementById("changeonsign").style.padding="0";
     document.getElementById("bi_person").style.fontSize="20px";
+    document.getElementById("bi_person").style.display="block";
     document.getElementById("sign_in_options_1").style.display="none";
     document.getElementById("after_sign_in_option").style.display="block";
     document.getElementById("sign_in_content").style.left = "-3vw";
     document.getElementById("sign_in_content").style.marginTop = "12%";
     
   }
-  else{
-    document.getElementById("changeonsign").style.marginLeft="10px";
-    document.getElementById("bi_person").style.display="none";
-    document.getElementById("after_sign_in_option").style.display="none";
-
-  }
 }
+
+
+document.getElementById("logout").addEventListener("click",function(){
+  sw = false;
+  localStorage.setItem("switch",sw);
+  signeduser = "Signin";
+  localStorage.setItem("signeduser",signeduser);
+});
+
+
