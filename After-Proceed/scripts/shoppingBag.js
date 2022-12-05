@@ -1,5 +1,6 @@
 
 
+<<<<<<< HEAD
 
 
 // For Login Button
@@ -14,6 +15,8 @@ document.getElementById("user_signup_button_CLASS").addEventListener("click", fu
 });
 
 
+=======
+>>>>>>> main
 var userCart = JSON.parse(localStorage.getItem("carts")) || [];
 
 
@@ -21,6 +24,7 @@ console.log(userCart);
 
 displayCountPrice();
 
+<<<<<<< HEAD
 function displayCountPrice() {
     document.querySelector(".items-count-CLASS").textContent = "Qty: " + userCart.length;
 
@@ -30,6 +34,17 @@ function displayCountPrice() {
     });
 
     document.querySelector(".items-total-value-CLASS").textContent = "Price: ₹" + totalprice;
+=======
+function displayCountPrice(){
+    document.querySelector(".items-count-CLASS").textContent ="Qty: "+userCart.length;
+
+    var totalprice = 0;
+    userCart.map(function(elem){
+        totalprice+=parseInt(elem.price);
+    });
+
+    document.querySelector(".items-total-value-CLASS").textContent ="Price: ₹"+totalprice;
+>>>>>>> main
 
 }
 
