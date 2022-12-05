@@ -90,3 +90,9 @@ document.getElementById("bi_arrow_left").addEventListener("click", function () {
 document.getElementById("proceed_btn").addEventListener("click",function(){
   window.open("./After-Proceed/shoppingBag.html");
 });
+
+var signeduser = localStorage.getItem("signeduser") || "null";
+
+console.log(signeduser);
+
+document.getElementById("changeonsign").textContent = signeduser;

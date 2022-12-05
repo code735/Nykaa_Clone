@@ -125,23 +125,33 @@
 </body>
 <script>
 
+    var obj = {
+        email:"prathmeshjkumbhar@gmail.com",
+        password:"Test@123",
+      };
+      var sarr = [] ;
+      sarr.push(obj);
+      localStorage.setItem("users",JSON.stringify(sarr));
+
  document.querySelector("form").addEventListener("submit",function(){
         event.preventDefault();
       var email = document.getElementById("email").value;
       console.log(email);
+      
       var arr = JSON.parse(localStorage.getItem("users"));
       var exist=arr.filter(function(elem){
         return (email==elem.email);
-
-        
       });
       console.log(exist);
-    
+      
+      var signeduser = localStorage.getItem("signeduser") || "null";
+
       if(exist.length>0)
       {
         alert("login Succesful");
         window.location.href="index.html"
-        
+        signeduser = email;
+        localStorage.setItem("signeduser",signeduser);
       }
       else{
         window.location.href="register.html"
