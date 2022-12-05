@@ -5,6 +5,63 @@
 //  variable for price and discount filters-- -> 
 var newProdDataForFilters;
 var BrandFilterFlag = false;
+
+
+// Sort ------------------------------------------------ Implemented here 
+
+
+
+var targetPrice = document.querySelectorAll(".radio_sort_CLASS");
+for (let index = 0; index < targetPrice.length; index++) {
+    targetPrice[index].addEventListener("change", function () {
+        if (this.checked) {
+            filterSortPriceNow(targetPrice[index].value);
+            console.log("checked");
+        }
+
+    });
+
+}
+
+function filterSortPriceNow(valueSet) {
+    document.querySelector("#products-grid-ID").remove();
+
+    console.log("sortHEllo");
+    if (BrandFilterFlag == false) {
+        newProdDataForFilters = product_data;
+    }
+    console.log(valueSet);
+    console.log("valueset");
+    if (valueSet == "LOW" || valueSet == "Low " || valueSet == 999) {
+        newProdDataForFilters.sort((a, b) => {
+            return a.price.replace('₹', '') - b.price.replace('₹', '');
+        });
+    } else {
+        newProdDataForFilters.sort((a, b) => {
+            return b.price.replace('₹', '') - a.price.replace('₹', '');
+        });
+    }
+
+
+    var filterd_Data = newProdDataForFilters;
+    var prodDivID = document.createElement("div");
+    prodDivID.setAttribute("id", "products-grid-ID");
+    document.querySelector("#face-primer-middle-div-ID").append(prodDivID);
+
+    display_Products(filterd_Data);
+
+    if (filterd_Data.length >= 1) {
+
+    } else {
+        noProductsDisplay();
+    }
+
+    console.log("123-check-Check");
+    console.log(filterd_Data);
+};
+
+
+
 // BRAND -----------------------------------------------------filter Functions implemented HERE
 
 

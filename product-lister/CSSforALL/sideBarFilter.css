@@ -22,19 +22,18 @@
 
 .accordion {
     font-family: Inter, Roboto, Arial, sans-serif;
-    background-color: white;
+    background: #fff5f9;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     border-radius: 5px;
-    /* box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px; */
-    font-family: inherit;
-    font-size: inherit;
+    font-size: 18px;
     line-height: inherit;
     border: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: solid #6969694a;
     border-width: thin;
-    /* height: 1%; */
     height: 50px;
     max-height: 50px;
 }

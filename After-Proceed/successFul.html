@@ -128,15 +128,13 @@
 </html>
 
 <script>
-    // item total value calculation
-    var totalVar1 = 0;
-    var userCart = JSON.parse(localStorage.getItem("carts")) || [];
-    userCart.forEach(function (elem) {
-        var totalValue = document.querySelector("#success-order-value-ID");
-        var totalVar2 = Math.round(elem.price.replace('₹', ''));
-        totalVar1 += totalVar2;
-        totalValue.textContent = totalVar1;
-        console.log(userCart.length);
-        console.log("ram");
-    });
+    // item total value calculation AFTER OR WITHOUT PROMOCODE
+
+    var userTotalPriceAFterPayment = localStorage.getItem("priceAfterPromo");
+
+    var totalValue = document.querySelector("#success-order-value-ID");
+
+    totalValue.textContent = userTotalPriceAFterPayment;
+    console.log("ram");
+
 </script>

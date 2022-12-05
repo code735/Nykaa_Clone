@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #left-user-accounts-bar #account-first-div-ID {
@@ -16,8 +16,6 @@ body {
     padding-right: 162px;
     position: relative;
     margin-top: 65px;
-    height: calc(100vh - 65px);
-    margin-top: ;
 }
 
 
@@ -58,12 +56,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
-    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
-    /* border: solid #ffaad3; */
     justify-content: center;
     text-align: center;
     font-family: Inter, sans-serif;
     font-size: 22px;
+
 }
 
 #login-signup-guest-div-ID>div {
