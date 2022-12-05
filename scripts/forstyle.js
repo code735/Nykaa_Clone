@@ -130,6 +130,9 @@ document.getElementById("logout").addEventListener("click",function(){
   localStorage.setItem("switch",sw);
   signeduser = "Signin";
   localStorage.setItem("signeduser",signeduser);
+  document.getElementById("sign_in_options_1").style.display = "block";
+  document.getElementById("after_sign_in_option").style.display = "none";
+
 });
 
 
