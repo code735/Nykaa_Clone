@@ -95,5 +95,12 @@
     align-items: center;
 }
 
+#total-price-details-on-payment-page-ID {
+    font-size: 27px;
+    color: rgb(0 19 37 / 87%);
+    font-weight: 500;
+
+}
+
 
 /* popup css here -----> */

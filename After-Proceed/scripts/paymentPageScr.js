@@ -33,6 +33,45 @@ function displayCartItemsOnPaymentPage() {
             showAddressOnPayment.textContent += element;
         }
 
+        // <div><input type="text" placeholder="Promocode"></div>
+        var currValuePromo = totalVar1;
+        localStorage.setItem("priceAfterPromo", currValuePromo);
+        document.getElementById("have-a-promo-code-a-ID").addEventListener("click", addPromoCode);
+
+        function addPromoCode() {
+
+            var promoCodeDiv = document.createElement("div");
+            var promoCodeInput = document.createElement("input");
+            promoCodeInput.setAttribute("placeholder", "Please Enter Promocode");
+            var promoCodeButton = document.createElement("button");
+            promoCodeButton.setAttribute("id", "promocode-apply-button-ID");
+
+            promoCodeButton.textContent = 'Apply';
+            promoCodeButton.style.backgroundColor = "#FC2779";
+            promoCodeButton.style.color = "#FFFFFF";
+            promoCodeButton.style.border = "none";
+            promoCodeButton.style.borderRadius = "1px";
+
+            promoCodeDiv.append(promoCodeInput, promoCodeButton);
+            document.getElementById("have-a-promo-code-Main-div-ID").append(promoCodeDiv);
+            document.getElementById("promocode-apply-button-ID").addEventListener("click", applyPromoCode);
+
+            function applyPromoCode() {
+
+                var promoValue = promoCodeInput.value;
+                if (promoValue.toUpperCase() == "FIRST10") {
+                    currValuePromo = totalVar1 - (totalVar1 / 100 * 10);
+                    totalValue.textContent = currValuePromo;
+                    promoCodeButton.textContent = 'Applied';
+                    promoCodeButton.style.backgroundColor = "#4bb543";
+                    localStorage.setItem("priceAfterPromo", currValuePromo);
+                }
+            }
+
+        }
+
+
+
 
     });
 }
