@@ -41,6 +41,7 @@ function displayCartItemsOnPaymentPage() {
         function addPromoCode() {
 
             var promoCodeDiv = document.createElement("div");
+
             var promoCodeInput = document.createElement("input");
             promoCodeInput.setAttribute("placeholder", "Please Enter Promocode");
             var promoCodeButton = document.createElement("button");
