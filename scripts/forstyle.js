@@ -91,7 +91,7 @@ document.getElementById("proceed_btn").addEventListener("click",function(){
   window.open("./After-Proceed/shoppingBag.html");
 });
 
-var signeduser = localStorage.getItem("signeduser") || "null";
+var signeduser = localStorage.getItem("signeduser") || "signin";
 
 console.log(signeduser);
 
