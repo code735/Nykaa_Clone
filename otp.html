@@ -154,19 +154,20 @@
 
 document.querySelector("form").addEventListener("submit",function(){
         event.preventDefault();
-    var sab=false;
+        var sw  = localStorage.getItem("switch") || false;
         var val = document.getElementById("otp").value;
         if(val=="7799"){
             alert("Login Succesfully");
-            sab=true;
-            window.location.href="first.html"
+            window.location.href="index.html"
+            sw = true;
+            localStorage.setItem("switch",sw);
         }
         else{
+            sw=false;
             alert("Wrong OTP !");
         }
         console.log(val);
     });
-
 
 </script>
 

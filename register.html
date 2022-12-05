@@ -166,7 +166,7 @@
 myInput.onblur = function() {
   document.getElementById("message").style.display = "none";
 }
-
+    var signeduser = localStorage.getItem("signeduser") || "null";
     // var arr=localStorage.getItem
     var arr = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -178,6 +178,8 @@ myInput.onblur = function() {
       var obj={
         email:email,password:password
         }
+        signeduser = email;
+        localStorage.setItem("signeduser",signeduser);
         // console.log(obj);
         arr.push(obj);
     //   console.log(email,password);
@@ -186,7 +188,11 @@ myInput.onblur = function() {
       window.location.href="otp.html"
 
       
+      
+      
     })
+
+    
    
 
 </script>
