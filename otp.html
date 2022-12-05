@@ -154,9 +154,11 @@
 
 document.querySelector("form").addEventListener("submit",function(){
         event.preventDefault();
+    var sab=false;
         var val = document.getElementById("otp").value;
         if(val=="7799"){
             alert("Login Succesfully");
+            sab=true;
             window.location.href="first.html"
         }
         else{
@@ -164,6 +166,7 @@ document.querySelector("form").addEventListener("submit",function(){
         }
         console.log(val);
     });
+
 
 </script>
 
