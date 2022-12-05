@@ -1,5 +1,19 @@
 
 
+
+
+// For Login Button
+document.getElementById("user_login_button_CLASS").addEventListener("click", function () {
+    window.open("../signup.html");
+});
+
+
+// For Login Button
+document.getElementById("user_signup_button_CLASS").addEventListener("click", function () {
+    window.open("../register.html");
+});
+
+
 var userCart = JSON.parse(localStorage.getItem("carts")) || [];
 
 
